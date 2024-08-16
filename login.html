@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogging Website - Login</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="form-container">
+    <p class="title">Login</p>
+    <form class="form" id="login-form">
+      <input type="email" class="input" id="email" placeholder="Email" required>
+      <input type="password" class="input" id="password" placeholder="Password" required>
+      <button type="submit" class="form-btn">Login</button>
+    </form>
+    <p class="sign-up-label">
+      Don't have an account? <span class="sign-up-link" onclick="redirectToSignup()">Sign Up</span>
+    </p>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

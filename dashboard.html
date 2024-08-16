@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Blog Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Reset some default browser styles */
+      body,
+      h1,
+      h2,
+      h3,
+      p,
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* New color scheme and font changes */
+      body {
+        font-family: "Roboto", sans-serif;
+        color: #333;
+        background-color: #f5f7fa;
+        line-height: 1.6;
+      }
+
+      .container {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 1200px;
+      }
+
+      #container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        width: 90%;
+        max-width: 1200px;
+      }
+
+      /* Header styles */
+      header {
+        background-color: #1e3a8a;
+        color: #fff;
+        padding: 20px 0;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2.5em;
+        font-weight: 700;
+      }
+
+      div ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 10px;
+        display: flex;
+        gap: 20px;
+      }
+
+      div ul li {
+        display: inline;
+      }
+
+      div ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      div ul li a:hover {
+        color: #60a5fa;
+      }
+
+      /* Main section styles */
+      main {
+        padding: 40px 0;
+      }
+
+      section {
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+      }
+
+      h2 {
+        border-bottom: 4px solid #1e3a8a;
+        padding-bottom: 15px;
+        margin-bottom: 25px;
+        font-size: 2.25em;
+        color: #1e3a8a;
+        font-weight: 700;
+      }
+
+      /* Article styles */
+      article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .article-img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        border-radius: 8px;
+        object-fit: cover;
+      }
+
+      .article-heading {
+        font-size: 1.75em;
+        margin-bottom: 15px;
+        font-weight: 600;
+        text-align: center;
+      }
+
+      .article-para {
+        font-size: 1.1em;
+        line-height: 1.8;
+        color: #444;
+        text-align: center;
+      }
+
+      .article-readMore {
+        color: #1e3a8a;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 10px;
+        transition: color 0.3s ease;
+      }
+
+      .article-readMore:hover {
+        color: #60a5fa;
+      }
+
+      /* About section */
+      .profile-img {
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+      }
+
+      .about-container {
+        text-align: center;
+      }
+
+      /* Footer styles */
+      footer {
+        background-color: #1e3a8a;
+        color: #fff;
+        text-align: center;
+        padding: 15px 0;
+      }
+
+      footer p {
+        margin: 0;
+        font-size: 1em;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        div ul {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        div ul li {
+          display: block;
+          margin: 10px 0;
+        }
+
+        .container {
+          width: 95%;
+        }
+      }
+
+      @media (max-width: 480px) {
+        header h1 {
+          font-size: 1.8em;
+        }
+
+        h2 {
+          font-size: 1.5em;
+        }
+
+        .article-heading {
+          font-size: 1.5em;
+        }
+
+        .article-readMore {
+          font-size: 0.9em;
+        }
+
+        footer p {
+          font-size: 0.9em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="container">
+        <div id="cont-head">
+          <h1>Abdul Rafay Blog</h1>
+        </div>
+        <div>
+          <ul id="ul-div">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="home">
+        <div class="container">
+          <h2>Latest Posts</h2>
+
+          <article>
+            <img src="./img/10-Steps-to-Reach-Your-Goals-YTS.jpg" class="article-img" alt="Blog Post Image" />
+            <div>
+              <h3 class="article-heading">When you set a goal and How you achieved it</h3>
+              <p class="article-para">
+                A common interview question for many positions is, “Give me an example of when you set a goal and how
+                you achieved it.” This question aims to understand your goal-setting and achievement process. Here’s a
+                structured approach to answer this question effectively.
+              </p>
+              <a href="#" class="article-readMore">Read More</a>
+            </div>
+          </article>
+
+          <article>
+            <img src="./img/images.jpeg" class="article-img" alt="Blog Post Image" />
+            <div>
+              <h3 class="article-heading">A decision that you’ve regretted and How you overcame it</h3>
+              <p class="article-para">
+                <b>Understanding the Question</b><br />
+                Interviewers ask this question, “Tell Me About a Decision That You’ve Regretted and How You Overcame
+                It”, to gauge your self-awareness, ability to reflect on your actions, and your problem-solving skills.
+              </p>
+              <a href="#" class="article-readMore">Read More</a>
+            </div>
+          </article>
+
+          <article>
+            <img src="./img/download.jpeg" class="article-img" alt="Blog Post Image" />
+            <div>
+              <h3 class="article-heading">About Business Failures and Why They Happened</h3>
+              <p class="article-para">
+                Business failures can occur due to a variety of reasons, and understanding these factors is crucial for
+                entrepreneurs and business owners to mitigate risks and increase their chances of success.
+              </p>
+              <a href="#" class="article-readMore">Read More</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container about-container">
+          <h2>About Me</h2>
+          <img src="./img/WhatsApp Image 2023-09-23 at 8.36.25 AM.jpeg" alt="Profile Image" class="profile-img" />
+          <p>Hi, I'm Abdul Rafay. Welcome to my personal blog where I share my thoughts, experiences, and more. Stay tuned for updates!</p>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <h2>Contact Me</h2>
+          <p>
+            You can reach me at
+            <a href="mailto:abdulrafayblog@gmail.com" target="_blank">rafayabdul7817@gmail.com</a>.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Abdul Rafay Blog. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

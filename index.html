@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogging Website - Sign Up</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="form-container">
+    <p class="title">Create an Account</p>
+    <form class="form" id="signup-form">
+      <input type="text" class="input" id="username" placeholder="Username" required>
+      <input type="email" class="input" id="email" placeholder="Email" required>
+      <input type="password" class="input" id="password" placeholder="Password" required>
+      <button type="submit" class="form-btn">Sign Up</button>
+    </form>
+    <p class="sign-up-label">
+      Already have an account? <span class="sign-up-link" onclick="redirectToLogin()">Log in</span>
+    </p>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
