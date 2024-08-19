@@ -72,6 +72,20 @@
       div ul li a:hover {
         color: #60a5fa;
       }
+        #logout-btn {
+        background-color: #f87171;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      #logout-btn:hover {
+        background-color: #ef4444;
+      }
 
       main {
         padding: 40px 0;
@@ -94,7 +108,6 @@
         font-weight: 700;
       }
 
-      /* Article styles */
       article {
         display: flex;
         flex-direction: column;
@@ -137,7 +150,6 @@
         color: #60a5fa;
       }
 
-      /* About section */
       .profile-img {
         border-radius: 50%;
         display: block;
@@ -151,7 +163,6 @@
         text-align: center;
       }
 
-      /* Footer styles */
       footer {
         background-color: #1e3a8a;
         color: #fff;
@@ -164,7 +175,6 @@
         font-size: 1em;
       }
 
-      /* Responsive Design */
       @media (max-width: 768px) {
         div ul {
           flex-direction: column;
@@ -215,6 +225,8 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><button id="logout-btn" onclick="logout()">Logout</button></li>
+
           </ul>
         </div>
       </div>
