@@ -35,11 +35,4 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
   
-  function redirectToLogin() {
-    window.location.href = 'login.html';
-  }
-  
-  function redirectToSignup() {
-    window.location.href = 'index.html';
-  }
   
